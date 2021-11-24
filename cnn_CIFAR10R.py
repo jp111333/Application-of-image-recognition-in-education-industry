@@ -46,7 +46,7 @@ model.compile(optimizer='rmsprop',
               metrics=['accuracy'])
 
 
-history = model.fit(train_images, train_labels, epochs=25,
+history = model.fit(train_images, train_labels, epochs=50,
                     validation_data=(test_images, test_labels))
 
 plt.plot(history.history['accuracy'], label='accuracy')
